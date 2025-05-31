@@ -41,8 +41,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.oldPassTB = new System.Windows.Forms.TextBox();
             this.sessions = new System.Windows.Forms.TabPage();
-            this.sessionsDataGrid = new System.Windows.Forms.DataGridView();
             this.revokeBtn = new System.Windows.Forms.Button();
+            this.sessionsDataGrid = new System.Windows.Forms.DataGridView();
             this.sessionBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ipDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -74,7 +74,7 @@
             this.account.Padding = new System.Windows.Forms.Padding(3);
             this.account.Size = new System.Drawing.Size(581, 371);
             this.account.TabIndex = 0;
-            this.account.Text = "Аккаунт";
+            this.account.Text = "Акаунт";
             this.account.UseVisualStyleBackColor = true;
             // 
             // groupBox1
@@ -91,7 +91,7 @@
             this.groupBox1.Size = new System.Drawing.Size(269, 198);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Изменить пароль";
+            this.groupBox1.Text = "Змінити пороль";
             // 
             // changePassBtn
             // 
@@ -99,7 +99,7 @@
             this.changePassBtn.Name = "changePassBtn";
             this.changePassBtn.Size = new System.Drawing.Size(117, 23);
             this.changePassBtn.TabIndex = 6;
-            this.changePassBtn.Text = "Изменить пароль";
+            this.changePassBtn.Text = "Змінити пороль";
             this.changePassBtn.UseVisualStyleBackColor = true;
             this.changePassBtn.Click += new System.EventHandler(this.changePassBtn_Click);
             // 
@@ -110,7 +110,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(83, 13);
             this.label3.TabIndex = 5;
-            this.label3.Text = "Повтор пароля";
+            this.label3.Text = "Повтор пороля";
             // 
             // retryPassTB
             // 
@@ -125,9 +125,9 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(6, 92);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(80, 13);
+            this.label2.Size = new System.Drawing.Size(78, 13);
             this.label2.TabIndex = 3;
-            this.label2.Text = "Новый пароль";
+            this.label2.Text = "Новий пороль";
             // 
             // newPassTB
             // 
@@ -142,9 +142,9 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(6, 50);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(84, 13);
+            this.label1.Size = new System.Drawing.Size(82, 13);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Старый пароль";
+            this.label1.Text = "Старий пороль";
             // 
             // oldPassTB
             // 
@@ -163,8 +163,18 @@
             this.sessions.Padding = new System.Windows.Forms.Padding(3);
             this.sessions.Size = new System.Drawing.Size(581, 371);
             this.sessions.TabIndex = 1;
-            this.sessions.Text = "Сессии";
+            this.sessions.Text = "Сесії";
             this.sessions.UseVisualStyleBackColor = true;
+            // 
+            // revokeBtn
+            // 
+            this.revokeBtn.Location = new System.Drawing.Point(500, 6);
+            this.revokeBtn.Name = "revokeBtn";
+            this.revokeBtn.Size = new System.Drawing.Size(75, 23);
+            this.revokeBtn.TabIndex = 1;
+            this.revokeBtn.Text = "Завершити";
+            this.revokeBtn.UseVisualStyleBackColor = true;
+            this.revokeBtn.Click += new System.EventHandler(this.revokeBtn_Click);
             // 
             // sessionsDataGrid
             // 
@@ -184,16 +194,6 @@
             this.sessionsDataGrid.Size = new System.Drawing.Size(488, 359);
             this.sessionsDataGrid.TabIndex = 0;
             // 
-            // revokeBtn
-            // 
-            this.revokeBtn.Location = new System.Drawing.Point(500, 6);
-            this.revokeBtn.Name = "revokeBtn";
-            this.revokeBtn.Size = new System.Drawing.Size(75, 23);
-            this.revokeBtn.TabIndex = 1;
-            this.revokeBtn.Text = "Завершить";
-            this.revokeBtn.UseVisualStyleBackColor = true;
-            this.revokeBtn.Click += new System.EventHandler(this.revokeBtn_Click);
-            // 
             // sessionBindingSource
             // 
             this.sessionBindingSource.DataSource = typeof(DWC_Desktop.Classes.Session);
@@ -209,14 +209,14 @@
             // ipDataGridViewTextBoxColumn
             // 
             this.ipDataGridViewTextBoxColumn.DataPropertyName = "ip";
-            this.ipDataGridViewTextBoxColumn.HeaderText = "IP Адрес";
+            this.ipDataGridViewTextBoxColumn.HeaderText = "IP Адреса";
             this.ipDataGridViewTextBoxColumn.Name = "ipDataGridViewTextBoxColumn";
             this.ipDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // createdDataGridViewTextBoxColumn
             // 
             this.createdDataGridViewTextBoxColumn.DataPropertyName = "created";
-            this.createdDataGridViewTextBoxColumn.HeaderText = "Дата создания";
+            this.createdDataGridViewTextBoxColumn.HeaderText = "Дата створення";
             this.createdDataGridViewTextBoxColumn.Name = "createdDataGridViewTextBoxColumn";
             this.createdDataGridViewTextBoxColumn.ReadOnly = true;
             // 
@@ -229,7 +229,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "SettingsForm";
-            this.Text = "Настройки";
+            this.Text = "Налаштування";
             this.Load += new System.EventHandler(this.SettingsForm_Load);
             this.tabControl1.ResumeLayout(false);
             this.account.ResumeLayout(false);
@@ -257,9 +257,9 @@
         private System.Windows.Forms.TabPage sessions;
         private System.Windows.Forms.Button revokeBtn;
         private System.Windows.Forms.DataGridView sessionsDataGrid;
+        private System.Windows.Forms.BindingSource sessionBindingSource;
         private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn ipDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn createdDataGridViewTextBoxColumn;
-        private System.Windows.Forms.BindingSource sessionBindingSource;
     }
 }

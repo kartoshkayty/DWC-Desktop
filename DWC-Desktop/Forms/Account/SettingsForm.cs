@@ -25,14 +25,14 @@ namespace DWC_Desktop.Forms.Account
 
             if (oldPass.Length == 0 || newPass.Length == 0 || retryPass.Length == 0)
             {
-                MessageBox.Show("Заполните все поля!", "DWC", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Заповніть всі поля!", "DWC", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
                 return;
             }
 
             if (newPass != retryPass)
             {
-                MessageBox.Show("Пароли не совпадают!", "DWC", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Паролі не співпадають!", "DWC", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
                 return;
             }
@@ -68,7 +68,7 @@ namespace DWC_Desktop.Forms.Account
 
             if (response != null) 
             {
-                MessageBox.Show("Вы успешно изменили пароль!", "DWC", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Ви успішно змінили пароль!", "DWC", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 Users.DeleteUser(Config.Token);
 
@@ -99,7 +99,7 @@ namespace DWC_Desktop.Forms.Account
                 }
                 catch (HttpError ex)
                 {
-                    MessageBox.Show($"Не удалось загрузить список сессий: {ex.message[0]}", "DWC", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show($"Не вдалося завантажити список сесій: {ex.message[0]}", "DWC", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             });
 
@@ -115,7 +115,7 @@ namespace DWC_Desktop.Forms.Account
 
             if (selected == null)
             {
-                MessageBox.Show("Выберите сессию!", "DWC", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Оберіть сесію!", "DWC", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
                 return;
             }
@@ -132,7 +132,7 @@ namespace DWC_Desktop.Forms.Account
                 }
                 catch (HttpError ex)
                 {
-                    MessageBox.Show($"Не удалось завершить сессию: {ex.message[0]}", "DWC", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show($"Не вдалося завершити сесію: {ex.message[0]}", "DWC", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             });
 

@@ -30,7 +30,7 @@ namespace DWC_Desktop.Forms.Admin.Users
 
             if (email.Length == 0 || password.Length == 0 || first_name.Length == 0 || last_name.Length == 0 || role == null) 
             {
-                MessageBox.Show("Заполните все поля для создания!", "DWC", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Заповніть усі поля для створення!", "DWC", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
                 return;
             }
@@ -52,14 +52,14 @@ namespace DWC_Desktop.Forms.Admin.Users
                         password = password,
                         first_name = first_name,
                         last_name = last_name,
-                        role = role.ToString() == "Администратор" ? Role.Admin : role.ToString()  == "Инженер" ? Role.Engineer : Role.Operator,
+                        role = role.ToString() == "Адміністратор" ? Role.Admin : role.ToString()  == "Інженер" ? Role.Engineer : Role.Operator,
                     };
 
                     response = await Client.Post<User, CreateRequest>("/user", request, true);
                 }
                 catch (HttpError ex)
                 {
-                    MessageBox.Show($"Не удалось создать пользователя: {ex.message[0]}", "DWC", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show($"Не вдалося створити користувача: {ex.message[0]}", "DWC", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             });
 

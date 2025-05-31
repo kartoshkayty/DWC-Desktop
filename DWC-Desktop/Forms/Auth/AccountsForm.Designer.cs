@@ -47,11 +47,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(184, 66);
+            this.label1.Location = new System.Drawing.Point(193, 66);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(100, 13);
+            this.label1.Size = new System.Drawing.Size(83, 13);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Выберите аккаунт";
+            this.label1.Text = "Оберіть акаунт";
             // 
             // loginBtn
             // 
@@ -59,7 +59,7 @@
             this.loginBtn.Name = "loginBtn";
             this.loginBtn.Size = new System.Drawing.Size(75, 23);
             this.loginBtn.TabIndex = 2;
-            this.loginBtn.Text = "Войти";
+            this.loginBtn.Text = "Увійти";
             this.loginBtn.UseVisualStyleBackColor = true;
             this.loginBtn.Click += new System.EventHandler(this.loginBtn_Click);
             // 
@@ -69,7 +69,7 @@
             this.addAccountBtn.Name = "addAccountBtn";
             this.addAccountBtn.Size = new System.Drawing.Size(113, 23);
             this.addAccountBtn.TabIndex = 3;
-            this.addAccountBtn.Text = "Добавить аккаунт";
+            this.addAccountBtn.Text = "Додати акаунт";
             this.addAccountBtn.UseVisualStyleBackColor = true;
             this.addAccountBtn.Click += new System.EventHandler(this.addAccountBtn_Click);
             // 
@@ -86,7 +86,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AccountsForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Выбор аккаунта";
+            this.Text = "Вибір акаунта";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.AccountsForm_FormClosed);
             this.Load += new System.EventHandler(this.AccountsForm_Load);
             this.ResumeLayout(false);

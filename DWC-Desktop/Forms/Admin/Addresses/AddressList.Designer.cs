@@ -35,11 +35,11 @@
             this.addAddressBtn = new System.Windows.Forms.ToolStripButton();
             this.deleteAddressBtn = new System.Windows.Forms.ToolStripButton();
             this.addressDataGrid = new System.Windows.Forms.DataGridView();
+            this.addressBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cityDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.streetDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.houseDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.addressBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -85,7 +85,7 @@
             this.addAddressBtn.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.addAddressBtn.Name = "addAddressBtn";
             this.addAddressBtn.Size = new System.Drawing.Size(23, 22);
-            this.addAddressBtn.Text = "Добавить";
+            this.addAddressBtn.Text = "Додати";
             this.addAddressBtn.Click += new System.EventHandler(this.addAddressBtn_Click);
             // 
             // deleteAddressBtn
@@ -95,7 +95,7 @@
             this.deleteAddressBtn.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.deleteAddressBtn.Name = "deleteAddressBtn";
             this.deleteAddressBtn.Size = new System.Drawing.Size(23, 22);
-            this.deleteAddressBtn.Text = "Удалить";
+            this.deleteAddressBtn.Text = "Видалити";
             this.deleteAddressBtn.Click += new System.EventHandler(this.deleteAddressBtn_Click);
             // 
             // addressDataGrid
@@ -118,6 +118,10 @@
             this.addressDataGrid.Size = new System.Drawing.Size(797, 405);
             this.addressDataGrid.TabIndex = 0;
             // 
+            // addressBindingSource
+            // 
+            this.addressBindingSource.DataSource = typeof(DWC_Desktop.Classes.Address);
+            // 
             // idDataGridViewTextBoxColumn
             // 
             this.idDataGridViewTextBoxColumn.DataPropertyName = "id";
@@ -128,27 +132,23 @@
             // cityDataGridViewTextBoxColumn
             // 
             this.cityDataGridViewTextBoxColumn.DataPropertyName = "city";
-            this.cityDataGridViewTextBoxColumn.HeaderText = "Город";
+            this.cityDataGridViewTextBoxColumn.HeaderText = "Місто";
             this.cityDataGridViewTextBoxColumn.Name = "cityDataGridViewTextBoxColumn";
             this.cityDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // streetDataGridViewTextBoxColumn
             // 
             this.streetDataGridViewTextBoxColumn.DataPropertyName = "street";
-            this.streetDataGridViewTextBoxColumn.HeaderText = "Улица";
+            this.streetDataGridViewTextBoxColumn.HeaderText = "Вулиця";
             this.streetDataGridViewTextBoxColumn.Name = "streetDataGridViewTextBoxColumn";
             this.streetDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // houseDataGridViewTextBoxColumn
             // 
             this.houseDataGridViewTextBoxColumn.DataPropertyName = "house";
-            this.houseDataGridViewTextBoxColumn.HeaderText = "Дом";
+            this.houseDataGridViewTextBoxColumn.HeaderText = "Дiм";
             this.houseDataGridViewTextBoxColumn.Name = "houseDataGridViewTextBoxColumn";
             this.houseDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // addressBindingSource
-            // 
-            this.addressBindingSource.DataSource = typeof(DWC_Desktop.Classes.Address);
             // 
             // AddressList
             // 
@@ -159,7 +159,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AddressList";
-            this.Text = "Адреса";
+            this.Text = "Адреси";
             this.Load += new System.EventHandler(this.AddressList_Load);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel1.PerformLayout();
@@ -181,10 +181,10 @@
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripButton addAddressBtn;
         private System.Windows.Forms.ToolStripButton deleteAddressBtn;
+        private System.Windows.Forms.BindingSource addressBindingSource;
         private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn cityDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn streetDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn houseDataGridViewTextBoxColumn;
-        private System.Windows.Forms.BindingSource addressBindingSource;
     }
 }

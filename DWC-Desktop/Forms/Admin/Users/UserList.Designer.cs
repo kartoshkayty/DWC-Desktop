@@ -35,12 +35,12 @@
             this.createUserBtn = new System.Windows.Forms.ToolStripButton();
             this.deleteUserBtn = new System.Windows.Forms.ToolStripButton();
             this.usersDataGrid = new System.Windows.Forms.DataGridView();
+            this.userBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.roleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.firstnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lastnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.userBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -88,7 +88,7 @@
             this.createUserBtn.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.createUserBtn.Name = "createUserBtn";
             this.createUserBtn.Size = new System.Drawing.Size(23, 23);
-            this.createUserBtn.Text = "Добавить";
+            this.createUserBtn.Text = "Додати";
             this.createUserBtn.Click += new System.EventHandler(this.createUserBtn_Click);
             // 
             // deleteUserBtn
@@ -98,7 +98,7 @@
             this.deleteUserBtn.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.deleteUserBtn.Name = "deleteUserBtn";
             this.deleteUserBtn.Size = new System.Drawing.Size(23, 23);
-            this.deleteUserBtn.Text = "Удалить";
+            this.deleteUserBtn.Text = "Видалити";
             this.deleteUserBtn.Click += new System.EventHandler(this.deleteUserBtn_Click);
             // 
             // usersDataGrid
@@ -122,6 +122,10 @@
             this.usersDataGrid.Size = new System.Drawing.Size(907, 418);
             this.usersDataGrid.TabIndex = 0;
             // 
+            // userBindingSource
+            // 
+            this.userBindingSource.DataSource = typeof(DWC_Desktop.Classes.User);
+            // 
             // idDataGridViewTextBoxColumn
             // 
             this.idDataGridViewTextBoxColumn.DataPropertyName = "id";
@@ -139,27 +143,23 @@
             // emailDataGridViewTextBoxColumn
             // 
             this.emailDataGridViewTextBoxColumn.DataPropertyName = "email";
-            this.emailDataGridViewTextBoxColumn.HeaderText = "Эл. Почта";
+            this.emailDataGridViewTextBoxColumn.HeaderText = "Електронна пошта";
             this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
             this.emailDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // firstnameDataGridViewTextBoxColumn
             // 
             this.firstnameDataGridViewTextBoxColumn.DataPropertyName = "first_name";
-            this.firstnameDataGridViewTextBoxColumn.HeaderText = "Имя";
+            this.firstnameDataGridViewTextBoxColumn.HeaderText = "Ім\'я";
             this.firstnameDataGridViewTextBoxColumn.Name = "firstnameDataGridViewTextBoxColumn";
             this.firstnameDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // lastnameDataGridViewTextBoxColumn
             // 
             this.lastnameDataGridViewTextBoxColumn.DataPropertyName = "last_name";
-            this.lastnameDataGridViewTextBoxColumn.HeaderText = "Фамилия";
+            this.lastnameDataGridViewTextBoxColumn.HeaderText = "Прізвище";
             this.lastnameDataGridViewTextBoxColumn.Name = "lastnameDataGridViewTextBoxColumn";
             this.lastnameDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // userBindingSource
-            // 
-            this.userBindingSource.DataSource = typeof(DWC_Desktop.Classes.User);
             // 
             // UserList
             // 
@@ -170,7 +170,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "UserList";
-            this.Text = "Пользователи";
+            this.Text = "Користувачі";
             this.Load += new System.EventHandler(this.UserList_Load);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel1.PerformLayout();
@@ -192,11 +192,11 @@
         private System.Windows.Forms.DataGridView usersDataGrid;
         private System.Windows.Forms.ToolStripButton createUserBtn;
         private System.Windows.Forms.ToolStripButton deleteUserBtn;
+        private System.Windows.Forms.BindingSource userBindingSource;
         private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn roleDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn emailDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn firstnameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn lastnameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.BindingSource userBindingSource;
     }
 }

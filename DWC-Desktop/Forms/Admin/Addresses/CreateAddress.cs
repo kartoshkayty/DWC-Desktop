@@ -27,7 +27,7 @@ namespace DWC_Desktop.Forms.Admin.Addresses
 
             if (city.Length == 0 || street.Length == 0 || rawHouse.Length == 0) 
             {
-                MessageBox.Show("Заполните все поля!", "DWC", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Заповніть усі поля!", "DWC", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
                 return;
             }
@@ -40,7 +40,7 @@ namespace DWC_Desktop.Forms.Admin.Addresses
             }
             catch (Exception)
             {
-                MessageBox.Show("Номер дома должен быть числом!", "DWC", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Номер будинку повинен бути числом!", "DWC", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
                 return;
             }
@@ -67,7 +67,7 @@ namespace DWC_Desktop.Forms.Admin.Addresses
                 }
                 catch (HttpError ex)
                 {
-                    MessageBox.Show($"Не удалось создать адрес: {ex.message[0]}", "DWC", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show($"Не вдалося створити адресу: {ex.message[0]}", "DWC", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             });
 

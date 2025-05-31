@@ -38,7 +38,7 @@ namespace DWC_Desktop.Forms.Auth
             object email = accountsList.SelectedItem;
 
             if (email == null) {
-                MessageBox.Show("Выберите аккаунт!", "DWC", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Оберіть акаунт!", "DWC", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
                 return;
             }
@@ -47,7 +47,7 @@ namespace DWC_Desktop.Forms.Auth
 
             if (user == null) 
             {
-                MessageBox.Show("Не удалось найти пользователя!", "DWC", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Не вдалось знайти корестувача!", "DWC", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
                 return;
             }

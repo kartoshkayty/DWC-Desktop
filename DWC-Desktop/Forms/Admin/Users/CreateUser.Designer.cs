@@ -47,9 +47,9 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(91, 87);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(37, 13);
+            this.label1.Size = new System.Drawing.Size(40, 13);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Почта";
+            this.label1.Text = "Пошта";
             // 
             // emailTB
             // 
@@ -64,7 +64,7 @@
             this.createBtn.Name = "createBtn";
             this.createBtn.Size = new System.Drawing.Size(75, 23);
             this.createBtn.TabIndex = 2;
-            this.createBtn.Text = "Создать";
+            this.createBtn.Text = "Створити";
             this.createBtn.UseVisualStyleBackColor = true;
             this.createBtn.Click += new System.EventHandler(this.createBtn_Click);
             // 
@@ -73,8 +73,8 @@
             this.roleCB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.roleCB.FormattingEnabled = true;
             this.roleCB.Items.AddRange(new object[] {
-            "Администратор",
-            "Инженер",
+            "Адміністратор",
+            "Інженер",
             "Оператор"});
             this.roleCB.Location = new System.Drawing.Point(184, 132);
             this.roleCB.Name = "roleCB";
@@ -86,9 +86,9 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(91, 135);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(65, 13);
+            this.label2.Size = new System.Drawing.Size(45, 13);
             this.label2.TabIndex = 4;
-            this.label2.Text = "Должность";
+            this.label2.Text = "Посада";
             // 
             // passTB
             // 
@@ -105,7 +105,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(45, 13);
             this.label3.TabIndex = 5;
-            this.label3.Text = "Пароль";
+            this.label3.Text = "Пороль";
             // 
             // firstNameTB
             // 
@@ -119,9 +119,9 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(91, 229);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(29, 13);
+            this.label4.Size = new System.Drawing.Size(26, 13);
             this.label4.TabIndex = 7;
-            this.label4.Text = "Имя";
+            this.label4.Text = "Ім\'я";
             // 
             // lastNameTB
             // 
@@ -137,7 +137,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(56, 13);
             this.label5.TabIndex = 9;
-            this.label5.Text = "Фамилия";
+            this.label5.Text = "Прізвище";
             // 
             // CreateUser
             // 
@@ -158,7 +158,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "CreateUser";
-            this.Text = "Создать пользователя";
+            this.Text = "Створити користувача";
             this.ResumeLayout(false);
             this.PerformLayout();
 

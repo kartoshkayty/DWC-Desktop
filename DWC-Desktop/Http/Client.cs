@@ -102,7 +102,7 @@ namespace DWC_Desktop.Http
 
             if (error.statusCode == 401)
             {
-                MessageBox.Show("Сессия истекла!", "DWC", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Сесія закінчилася!", "DWC", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
                 Users.DeleteUser(Config.Token);
 

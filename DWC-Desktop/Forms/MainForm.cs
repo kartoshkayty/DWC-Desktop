@@ -7,7 +7,6 @@ using DWC_Desktop.Forms.Water;
 using DWC_Desktop.Http;
 using DWC_Desktop.Http.Dto;
 using DWC_Desktop.Http.Dto.User;
-using DWC_Desktop.Utils;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -35,20 +34,9 @@ namespace DWC_Desktop.Forms
                 {
                     response = await Client.Get<MeResponse>("/user/@me", true);
                 }
-                catch (HttpError ex)
+                catch (HttpError)
                 {
-                    if (ex.statusCode == 401)
-                    {
-                        MessageBox.Show("Истек срок действия входа!", "DWC", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
-                        Users.DeleteUser(Config.Token);
-
-                        Application.Exit();
-
-                        return;
-                    }
-
-                    MessageBox.Show("Произошла непредвиденная ошибка!", "DWC", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Сталася непередбачена помилка!", "DWC", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
                     Application.Exit();
 
@@ -68,7 +56,7 @@ namespace DWC_Desktop.Forms
             });
 
             loadBar.Value = 100;
-            welcomeLabel.Text = $"Здравствйте {Config.user.first_name} {Config.user.last_name}!";
+            welcomeLabel.Text = $"Вітаю {Config.user.first_name} {Config.user.last_name}!";
 
             foreach (Control child in Controls)
             {

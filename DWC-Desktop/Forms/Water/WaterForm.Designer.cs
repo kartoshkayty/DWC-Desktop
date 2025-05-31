@@ -34,6 +34,7 @@
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.exportBtn = new System.Windows.Forms.Button();
             this.deleteBtn = new System.Windows.Forms.Button();
             this.addBtn = new System.Windows.Forms.Button();
             this.reportDataGrid = new System.Windows.Forms.DataGridView();
@@ -59,7 +60,6 @@
             this.PHGauge = new LiveCharts.WinForms.SolidGauge();
             this.tempGauge = new LiveCharts.WinForms.SolidGauge();
             this.label2 = new System.Windows.Forms.Label();
-            this.exportBtn = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -90,7 +90,7 @@
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(1356, 535);
             this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Управление данными";
+            this.tabPage1.Text = "Керування даними";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // label1
@@ -99,9 +99,9 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(442, 255);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(387, 25);
+            this.label1.Size = new System.Drawing.Size(336, 25);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Вы не можете просматривать отчеты";
+            this.label1.Text = "Ви не можете переглядати звіти";
             this.label1.Visible = false;
             // 
             // groupBox1
@@ -114,7 +114,17 @@
             this.groupBox1.Size = new System.Drawing.Size(86, 232);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Управление";
+            this.groupBox1.Text = "Керування";
+            // 
+            // exportBtn
+            // 
+            this.exportBtn.Location = new System.Drawing.Point(6, 203);
+            this.exportBtn.Name = "exportBtn";
+            this.exportBtn.Size = new System.Drawing.Size(74, 23);
+            this.exportBtn.TabIndex = 2;
+            this.exportBtn.Text = "Експорт";
+            this.exportBtn.UseVisualStyleBackColor = true;
+            this.exportBtn.Click += new System.EventHandler(this.exportBtn_Click);
             // 
             // deleteBtn
             // 
@@ -122,7 +132,7 @@
             this.deleteBtn.Name = "deleteBtn";
             this.deleteBtn.Size = new System.Drawing.Size(74, 23);
             this.deleteBtn.TabIndex = 1;
-            this.deleteBtn.Text = "Удалить";
+            this.deleteBtn.Text = "Видалити";
             this.deleteBtn.UseVisualStyleBackColor = true;
             this.deleteBtn.Click += new System.EventHandler(this.deleteBtn_Click);
             // 
@@ -132,7 +142,7 @@
             this.addBtn.Name = "addBtn";
             this.addBtn.Size = new System.Drawing.Size(74, 23);
             this.addBtn.TabIndex = 0;
-            this.addBtn.Text = "Добавить";
+            this.addBtn.Text = "Додати";
             this.addBtn.UseVisualStyleBackColor = true;
             this.addBtn.Click += new System.EventHandler(this.addBtn_Click);
             // 
@@ -230,18 +240,18 @@
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage2.Size = new System.Drawing.Size(1356, 535);
             this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Последний отчет";
+            this.tabPage2.Text = "Останній звіт";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(459, 60);
+            this.label8.Location = new System.Drawing.Point(481, 60);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(438, 24);
+            this.label8.Size = new System.Drawing.Size(394, 24);
             this.label8.TabIndex = 11;
-            this.label8.Text = "Вы не можете просматривать эту информацию";
+            this.label8.Text = "Ви не можете переглядати цю інформацію";
             this.label8.Visible = false;
             // 
             // label7
@@ -249,9 +259,9 @@
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(546, 362);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(38, 13);
+            this.label7.Size = new System.Drawing.Size(44, 13);
             this.label7.TabIndex = 10;
-            this.label7.Text = "Адрес";
+            this.label7.Text = "Адреса";
             // 
             // addressCB
             // 
@@ -275,9 +285,9 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(986, 221);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(53, 13);
+            this.label6.Size = new System.Drawing.Size(52, 13);
             this.label6.TabIndex = 8;
-            this.label6.Text = "Примеси";
+            this.label6.Text = "Домішки";
             // 
             // impuritiesGauge
             // 
@@ -290,11 +300,11 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(747, 221);
+            this.label5.Location = new System.Drawing.Point(753, 221);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(83, 13);
+            this.label5.Size = new System.Drawing.Size(72, 13);
             this.label5.TabIndex = 6;
-            this.label5.Text = "Уровень хлора";
+            this.label5.Text = "Рівень хлора";
             // 
             // chlorineGauge
             // 
@@ -307,11 +317,11 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(534, 221);
+            this.label4.Location = new System.Drawing.Point(540, 221);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(69, 13);
+            this.label4.Size = new System.Drawing.Size(58, 13);
             this.label4.TabIndex = 4;
-            this.label4.Text = "Уровень PH";
+            this.label4.Text = "Рівень PH";
             // 
             // label3
             // 
@@ -342,21 +352,11 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(595, 17);
+            this.label2.Location = new System.Drawing.Point(612, 17);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(167, 24);
+            this.label2.Size = new System.Drawing.Size(132, 24);
             this.label2.TabIndex = 0;
-            this.label2.Text = "Последний отчет";
-            // 
-            // exportBtn
-            // 
-            this.exportBtn.Location = new System.Drawing.Point(6, 203);
-            this.exportBtn.Name = "exportBtn";
-            this.exportBtn.Size = new System.Drawing.Size(74, 23);
-            this.exportBtn.TabIndex = 2;
-            this.exportBtn.Text = "Экспорт";
-            this.exportBtn.UseVisualStyleBackColor = true;
-            this.exportBtn.Click += new System.EventHandler(this.exportBtn_Click);
+            this.label2.Text = "Останній звіт";
             // 
             // WaterForm
             // 

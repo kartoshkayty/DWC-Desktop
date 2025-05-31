@@ -86,7 +86,7 @@ namespace DWC_Desktop.Forms.Auth
 
             if (rawCode.Length < 5)
             {
-                MessageBox.Show("Введите код полностью!", "DWC", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Введіть код повністю!", "DWC", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
                 return;
             }
@@ -99,7 +99,7 @@ namespace DWC_Desktop.Forms.Auth
             }
             catch (Exception) 
             {
-                MessageBox.Show("Код должен содержать в себе только цифры!");
+                MessageBox.Show("Код повинен містити лише цифри!");
 
                 return;
             }

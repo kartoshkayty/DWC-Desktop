@@ -32,7 +32,7 @@ namespace DWC_Desktop.Forms.Water.Data
                 }
                 catch (HttpError ex)
                 {
-                    MessageBox.Show($"Не удалось загрузить адреса: {ex.message[0]}", "DWC", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show($"Не вдалося завантажити адреси: {ex.message[0]}", "DWC", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             });
 
@@ -59,7 +59,7 @@ namespace DWC_Desktop.Forms.Water.Data
 
             if (rawTemp.Length == 0 || rawPH.Length == 0 || rawChlorine.Length == 0 || rawImpurities.Length == 0 || address == null)
             {
-                MessageBox.Show("Укажите все данные!", "DWC", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Вкажіть усі дані!", "DWC", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
                 return;
             }
@@ -77,7 +77,7 @@ namespace DWC_Desktop.Forms.Water.Data
             }
             catch (Exception)
             {
-                MessageBox.Show("Укажите числа!", "DWC", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Вкажіть числа!", "DWC", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
                 return;
             }
@@ -106,7 +106,7 @@ namespace DWC_Desktop.Forms.Water.Data
                 }
                 catch (HttpError ex)
                 {
-                    MessageBox.Show($"Не удалось создать отчет: {ex.message[0]}", "DWC", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show($"Не вдалось створити звіт: {ex.message[0]}", "DWC", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             });
 

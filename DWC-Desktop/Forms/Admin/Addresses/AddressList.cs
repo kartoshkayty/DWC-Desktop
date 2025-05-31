@@ -34,7 +34,7 @@ namespace DWC_Desktop.Forms.Admin.Addresses
                 }
                 catch (HttpError ex) 
                 {
-                    MessageBox.Show($"Ошибка при получении адресов: {ex.message[0]}");
+                    MessageBox.Show($"Помилка при отриманні адрес: {ex.message[0]}");
                 }
             });
 
@@ -57,7 +57,7 @@ namespace DWC_Desktop.Forms.Admin.Addresses
 
             if (selected == null)
             {
-                MessageBox.Show("Выберите адрес для удаления!", "DWC", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Оберіть адресу для видалення!", "DWC", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
                 return;
             }
@@ -74,7 +74,7 @@ namespace DWC_Desktop.Forms.Admin.Addresses
                 }
                 catch (HttpError ex) 
                 {
-                    MessageBox.Show($"Не удалось удалить адрес: {ex.message[0]}", "DWC", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show($"Не вдалося видалити адресу: {ex.message[0]}", "DWC", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             });
 

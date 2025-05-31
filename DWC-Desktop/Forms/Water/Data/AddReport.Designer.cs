@@ -64,7 +64,7 @@
             this.groupBox1.Size = new System.Drawing.Size(435, 292);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Данные";
+            this.groupBox1.Text = "Дані";
             // 
             // addressCB
             // 
@@ -87,9 +87,9 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(39, 244);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(38, 13);
+            this.label5.Size = new System.Drawing.Size(44, 13);
             this.label5.TabIndex = 8;
-            this.label5.Text = "Адрес";
+            this.label5.Text = "Адреса";
             // 
             // impuritiesTB
             // 
@@ -103,9 +103,9 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(39, 172);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(53, 13);
+            this.label4.Size = new System.Drawing.Size(52, 13);
             this.label4.TabIndex = 6;
-            this.label4.Text = "Примеси";
+            this.label4.Text = "Домішки";
             // 
             // chlorineTB
             // 
@@ -119,9 +119,9 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(39, 134);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(83, 13);
+            this.label3.Size = new System.Drawing.Size(72, 13);
             this.label3.TabIndex = 4;
-            this.label3.Text = "Уровень хлора";
+            this.label3.Text = "Рівень хлора";
             // 
             // PHTB
             // 
@@ -135,9 +135,9 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(39, 92);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(69, 13);
+            this.label2.Size = new System.Drawing.Size(58, 13);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Уровень PH";
+            this.label2.Text = "Рівень PH";
             // 
             // tempTB
             // 
@@ -161,7 +161,7 @@
             this.createBtn.Name = "createBtn";
             this.createBtn.Size = new System.Drawing.Size(75, 23);
             this.createBtn.TabIndex = 1;
-            this.createBtn.Text = "Создать";
+            this.createBtn.Text = "Створити";
             this.createBtn.UseVisualStyleBackColor = true;
             this.createBtn.Click += new System.EventHandler(this.createBtn_Click);
             // 
@@ -174,7 +174,7 @@
             this.Controls.Add(this.groupBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AddReport";
-            this.Text = "Добавление отчета";
+            this.Text = "Додавання звіту";
             this.Load += new System.EventHandler(this.AddReport_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

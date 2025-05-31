@@ -29,7 +29,7 @@ namespace DWC_Desktop.Forms.Auth
 
             if (email.Length == 0 || password.Length == 0) 
             {
-                MessageBox.Show("Вы не указали почту или пароль!", "DWC", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Ви не вказали пошту або пороль!", "DWC", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
                 return;
             }
@@ -42,7 +42,7 @@ namespace DWC_Desktop.Forms.Auth
 
             if (user != null) 
             {
-                MessageBox.Show("Пользователь с таким адресом электронной почты уже есть в системе!", "DWC", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Користувач з такою електронною адресою вже існує в системі!", "DWC", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
                 emailTB.Enabled = true;
                 passwordTB.Enabled = true;

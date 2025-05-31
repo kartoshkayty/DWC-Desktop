@@ -35,7 +35,7 @@ namespace DWC_Desktop.Forms.Admin.Users
                 }
                 catch (HttpError ex) 
                 {
-                    MessageBox.Show($"Не удалось получить список пользователей: {ex.message[0]}");
+                    MessageBox.Show($"Не вдалося отримати список користувачів: {ex.message[0]}");
                 }
             });
 
@@ -60,7 +60,7 @@ namespace DWC_Desktop.Forms.Admin.Users
 
             if (Selected == null)
             {
-                MessageBox.Show("Выберите пользователя!", "DWC", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Оберіть користувача!", "DWC", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
                 return;
             }
@@ -79,7 +79,7 @@ namespace DWC_Desktop.Forms.Admin.Users
                 }
                 catch (HttpError ex)
                 {
-                    MessageBox.Show($"Не удалось удалить пользователя: {ex.message[0]}", "DWC", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show($"Не вдалося видалити користувача: {ex.message[0]}", "DWC", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             });
 

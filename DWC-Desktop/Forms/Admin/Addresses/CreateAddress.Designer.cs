@@ -50,18 +50,18 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(89, 72);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(37, 13);
+            this.label1.Size = new System.Drawing.Size(35, 13);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Город";
+            this.label1.Text = "Мiсто";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(89, 108);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(39, 13);
+            this.label2.Size = new System.Drawing.Size(43, 13);
             this.label2.TabIndex = 3;
-            this.label2.Text = "Улица";
+            this.label2.Text = "Вулиця";
             // 
             // streetTB
             // 
@@ -75,9 +75,9 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(89, 148);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(70, 13);
+            this.label3.Size = new System.Drawing.Size(84, 13);
             this.label3.TabIndex = 5;
-            this.label3.Text = "Номер дома";
+            this.label3.Text = "Номер будинку";
             // 
             // houseTB
             // 
@@ -92,7 +92,7 @@
             this.createBtn.Name = "createBtn";
             this.createBtn.Size = new System.Drawing.Size(75, 23);
             this.createBtn.TabIndex = 6;
-            this.createBtn.Text = "Создать";
+            this.createBtn.Text = "Додати";
             this.createBtn.UseVisualStyleBackColor = true;
             this.createBtn.Click += new System.EventHandler(this.createBtn_Click);
             // 
@@ -111,7 +111,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "CreateAddress";
-            this.Text = "Создать адрес";
+            this.Text = "Створити адресу";
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -43,9 +43,9 @@
             this.welcomeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.welcomeLabel.Location = new System.Drawing.Point(12, 9);
             this.welcomeLabel.Name = "welcomeLabel";
-            this.welcomeLabel.Size = new System.Drawing.Size(118, 20);
+            this.welcomeLabel.Size = new System.Drawing.Size(53, 20);
             this.welcomeLabel.TabIndex = 0;
-            this.welcomeLabel.Text = "Здравствуйте";
+            this.welcomeLabel.Text = "Вітаю";
             this.welcomeLabel.Visible = false;
             // 
             // loadBar
@@ -64,7 +64,7 @@
             this.userManagePBtn.Name = "userManagePBtn";
             this.userManagePBtn.Size = new System.Drawing.Size(266, 32);
             this.userManagePBtn.TabIndex = 2;
-            this.userManagePBtn.Text = "Управление пользователями";
+            this.userManagePBtn.Text = "Управління користувачами";
             this.userManagePBtn.UseVisualStyleBackColor = true;
             this.userManagePBtn.Visible = false;
             this.userManagePBtn.Click += new System.EventHandler(this.userManagePBtn_Click);
@@ -77,7 +77,7 @@
             this.addressPBtn.Name = "addressPBtn";
             this.addressPBtn.Size = new System.Drawing.Size(266, 32);
             this.addressPBtn.TabIndex = 4;
-            this.addressPBtn.Text = "Управление адресами";
+            this.addressPBtn.Text = "Управління адресами";
             this.addressPBtn.UseVisualStyleBackColor = true;
             this.addressPBtn.Visible = false;
             this.addressPBtn.Click += new System.EventHandler(this.addressPBtn_Click);
