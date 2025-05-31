@@ -10,7 +10,7 @@ namespace DWC_Desktop
 
         public static void Init()
         {
-            API_URL = "http://localhost:3000/api";
+            API_URL = "https://dwc-api.minecis.net/api";
         }
     }
 }
