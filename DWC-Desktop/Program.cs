@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using DWC_Desktop.Classes;
+using DWC_Desktop.Database;
+using DWC_Desktop.Forms.Auth;
+using DWC_Desktop.Utils;
 
 namespace DWC_Desktop
 {
@@ -16,7 +18,20 @@ namespace DWC_Desktop
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+
+            Config.Init();
+            DB.Init();
+
+            List<LocalUser> users = Users.GetUsers();
+
+            if (users.Count == 0)
+            {
+                Application.Run(new LoginForm());
+
+                return;
+            }
+
+            Application.Run(new AccountsForm());
         }
     }
 }
